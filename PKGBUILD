@@ -5,7 +5,7 @@
 #               apple-ibridge drivers, respectively.
 
 pkgbase="linux-t2"
-_pkgver=6.14.6
+_pkgver=6.15-rc7
 pkgver=${_pkgver}
 _srcname=linux-${_pkgver}
 pkgrel=1
@@ -39,11 +39,13 @@ options=('!strip')
 _srcname="linux-${_pkgver}-arch${archrel}"
 T2_PATCH_HASH=c0db79a25bc37dbd0c27636914b3903016a2fc39
 source=(
-  https://github.com/archlinux/linux/archive/refs/tags/v${_pkgver}-arch${archrel}.tar.gz
+  #https://github.com/archlinux/linux/archive/refs/tags/v${_pkgver}-arch${archrel}.tar.gz
+  https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/snapshot/linux-6.15-rc7.tar.gz
+  
   config  # the main kernel config file
 
   # t2linux Patches
-  patches::git+https://github.com/t2linux/linux-t2-patches
+  patches::git+https://github.com/t2linux/linux-t2-patches#branch=iommu
 )
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
@@ -251,7 +253,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('716e22b6667c27b7b3cc0dc376eca9ae3eee5094285e20c7b7e62506a11023ba'
+sha256sums=('SKIP'
             'c6c12ee73e386142074ce76cc5409552815a7d9812a1d4bbd2d686fc9e785539'
             'SKIP')
 # vim:set ts=8 sts=2 sw=2 et:
