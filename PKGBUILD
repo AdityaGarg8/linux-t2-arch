@@ -5,7 +5,7 @@
 #               apple-ibridge drivers, respectively.
 
 pkgbase="linux-t2"
-_pkgver=6.15-rc7
+_pkgver=6.15
 pkgver=${_pkgver}
 _srcname=linux-${_pkgver}
 pkgrel=1
