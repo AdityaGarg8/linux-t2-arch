@@ -6,7 +6,7 @@
 
 pkgbase=linux-t2
 pkgver=7.2.7.arch1
-pkgrel=7
+pkgrel=8
 pkgdesc='Linux for T2 Macs'
 url='https://github.com/archlinux/linux'
 arch=(
@@ -54,7 +54,7 @@ source=(
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
 
   # t2linux Patches
-  patches::git+https://github.com/t2linux/linux-t2-patches#commit=${T2_PATCH_HASH}
+  patches::git+https://github.com/t2linux/linux-t2-patches#branch=wifi
 )
 source_x86_64=(config.x86_64)
 validpgpkeys=(
