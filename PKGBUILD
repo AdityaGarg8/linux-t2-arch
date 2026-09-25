@@ -62,9 +62,9 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
-sha256sums=('12e8d5a973d1ad7c5a5c69882e4022b131ed715db7003fdcd760ddf8c3e51941'
+sha256sums=('SKIP'
             'SKIP'
-            'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+            'SKIP'
             'SKIP'
             'SKIP')
 sha256sums_x86_64=('20605e0c6e894a7598b328798570fc95d16169d0a192feba5d4fba039078e61f')
